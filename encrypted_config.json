@@ -1,7 +1,7 @@
 {
-  "data": "FAKE_ENCRPTED_DATA_123456",
-  "iv": "FAKE_IV_123",
-  "tag": "FAKE_TAG_123",
-  "version": "2025.11.07-v1",
-  "update_time": 1730911200
+  "data": "CzTMGEBiKNDro8dlgdkLMc1lHYUcR6+dNXo+WnOZ9DANtXGEeHMoxzCBaEuj4AwB+ENKCxNlPm80uJ3mKnWB0Mu4jax2T2NsMg==",
+  "iv": "2AEPz1oJQ/E42TxR",
+  "tag": "wODRx58DtnQ9oJJ+eCfsBA==",
+  "version": "2025-11-06-v1",
+  "update_time": 1762456915
 }
