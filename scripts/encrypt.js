@@ -4,8 +4,8 @@ const fs = require('fs');
 
 // === 你要加密的真实 API 地址 ===
 const config = {
-  api: "https://api.your-real-domain.com/v1",
-  backup: "https://backup.your-real-domain.com"
+  api: "https://38.22.93.250:2025",
+  backup: "https://38.22.93.250:12025"
 };
 
 // === 密钥（从环境变量读，Actions 会自动填）===
