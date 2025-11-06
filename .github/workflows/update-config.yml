@@ -1,0 +1,31 @@
+name: Update Encrypted Config
+
+on:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '0 3 * * *'  # 每天凌晨 3 点
+
+jobs:
+  encrypt-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run encryption script
+        env:
+          API_KEY_BASE64: ${{ secrets.API_KEY_BASE64 }}
+        run: node scripts/encrypt.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add encrypted_config.json
+          git diff --staged --quiet || git commit -m "Auto-update config: $(date)"
+          git push
