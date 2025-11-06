@@ -1,0 +1,7 @@
+{
+  "data": "FAKE_ENCRPTED_DATA_123456",
+  "iv": "FAKE_IV_123",
+  "tag": "FAKE_TAG_123",
+  "version": "2025.11.07-v1",
+  "update_time": 1730911200
+}
